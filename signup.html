@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+   <style>
+    body {
+      font-family: italic;
+      background: linear-gradient(black,rgb(1, 88, 88),black); /* black background */
+      color: #ffffffb0; /* white text */
+    }
+    form {
+      width: 30%;
+      margin: 150px auto;
+      background-color: black; /* bubble color */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input[type="text"], input[type="password"],input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #000000; /* black button */
+      color: #ffffffb0; /* white text */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 150px;
+    }
+    button[type="submit"]:hover {
+      background-color: #0a615d; /* bubble color on hover */
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    .error-message {
+      color: #ff0000; /* red text for error messages */
+      text-align: center;
+    }
+    a{
+        color: #0a615d;
+    }
+   </style>
+    
+</head>
+<body>
+   
+
+<form id="signup-form" action="sign.php" method="POST">
+<h1>Sign Up</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit" >Sign Up</button>
+       <br><br> <a href="login.html">If you sign up before, you can login</a>
+    </form>
+  
+    
+    
+ 
+  
+  
+  
+  
+  
+  
+ 
+   
+
+
+
+</body>
+</html>
